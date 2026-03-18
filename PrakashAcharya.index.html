@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prakash Acharya | Supply Chain Transformation Leader</title>
+  <meta name="description" content="Prakash Acharya is a supply chain transformation leader and enterprise architect with 20+ years of experience across planning, operations, and Agentic AI." />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121933;
+      --panel-2: #182245;
+      --text: #eef2ff;
+      --muted: #b9c2e3;
+      --line: rgba(255,255,255,0.1);
+      --accent: #7dd3fc;
+      --accent-2: #c084fc;
+      --shadow: 0 20px 60px rgba(0,0,0,0.28);
+      --radius: 22px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(125,211,252,0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(192,132,252,0.16), transparent 24%),
+        linear-gradient(180deg, #08101f 0%, #0b1020 100%);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .wrap {
+      width: min(100% - 32px, var(--max));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+      background: rgba(11, 16, 32, 0.72);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .hero {
+      padding: 72px 0 34px;
+    }
+
+    .hero-card {
+      display: grid;
+      grid-template-columns: 1.45fr 0.95fr;
+      gap: 28px;
+      align-items: stretch;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(125,211,252,0.12);
+      color: #d8f4ff;
+      font-size: 0.9rem;
+      border: 1px solid rgba(125,211,252,0.2);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 4.15rem);
+      line-height: 1.03;
+      margin: 0 0 14px;
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      font-size: clamp(1.02rem, 2vw, 1.18rem);
+      color: var(--muted);
+      max-width: 60ch;
+      margin: 0 0 22px;
+    }
+
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 22px 0 28px;
+    }
+
+    .pill {
+      padding: 12px 14px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-weight: 700;
+      transition: transform 0.18s ease, opacity 0.18s ease, border-color 0.18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,0.24);
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color: #06111e;
+      border: none;
+    }
+
+    .stat-card {
+      background: linear-gradient(180deg, rgba(24,34,69,0.95), rgba(13,20,42,0.95));
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100%;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .stat {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.5rem;
+      margin-bottom: 4px;
+    }
+
+    section {
+      padding: 24px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(1.5rem, 3vw, 2.15rem);
+      letter-spacing: -0.03em;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 58ch;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.08rem;
+    }
+
+    .card p { margin: 0; color: var(--muted); }
+
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--line);
+      color: #e5ebff;
+      font-size: 0.94rem;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 16px;
+    }
+
+    .timeline-item {
+      padding: 20px 22px;
+      border-left: 3px solid rgba(125,211,252,0.55);
+      background: rgba(255,255,255,0.04);
+      border-radius: 0 20px 20px 0;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .timeline-item h3 {
+      margin: 0 0 6px;
+      font-size: 1.08rem;
+    }
+
+    .timeline-item .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    ul.clean {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .impact {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .impact .card {
+      text-align: center;
+      padding: 20px 14px;
+    }
+
+    .impact strong {
+      display: block;
+      font-size: 1.45rem;
+      margin-bottom: 6px;
+    }
+
+    .footer {
+      padding: 34px 0 56px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .note {
+      margin-top: 12px;
+      font-size: 0.95rem;
+    }
+
+    code.inline {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 2px 8px;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero-card,
+      .grid-3,
+      .grid-2,
+      .impact {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-points,
+      .stat-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero {
+        padding-top: 42px;
+      }
+
+      .hero-card {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">Prakash Acharya</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#industries">Industries</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-card">
+        <div>
+          <div class="eyebrow">Supply Chain Transformation • Enterprise Architecture • Agentic AI</div>
+          <h1>Building practical, scalable supply chain transformation for complex enterprises.</h1>
+          <p class="subtitle">
+            I help Fortune 500 organizations turn planning complexity into business value through stronger architecture, better workflows,
+            and modern supply chain capabilities across planning, scheduling, inventory, and decision support.
+          </p>
+
+          <div class="hero-points">
+            <div class="pill">20+ years in supply chain transformation</div>
+            <div class="pill">15+ enterprise-wide customer engagements</div>
+            <div class="pill">Deep expertise across planning and operations</div>
+            <div class="pill">Growing focus on Agentic AI in supply chain</div>
+          </div>
+
+          <div class="button-row">
+            <a class="btn btn-primary" href="#contact">Let’s Connect</a>
+            <a class="btn" href="https://www.linkedin.com/in/your-linkedin-here" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="mailto:your-email@example.com">Email</a>
+            <a class="btn" href="#experience">View Experience</a>
+          </div>
+        </div>
+
+        <aside class="stat-card">
+          <div>
+            <h2 style="margin:0 0 8px; font-size:1.25rem;">At a glance</h2>
+            <p style="margin:0; color:var(--muted);">
+              Strategic, hands-on leadership across supply chain planning transformation, enterprise architecture, and business-focused AI advisory.
+            </p>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat">
+              <strong>20+</strong>
+              Years of experience
+            </div>
+            <div class="stat">
+              <strong>15+</strong>
+              Large enterprise engagements
+            </div>
+            <div class="stat">
+              <strong>10</strong>
+              Core industries served
+            </div>
+            <div class="stat">
+              <strong>4</strong>
+              Progressive leadership roles
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>About</h2>
+            <p>Executive profile written for recruiters, founders, and enterprise leaders.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <p>
+            Prakash Acharya is a strategic and hands-on supply chain transformation leader with 20+ years of experience helping Fortune 500 organizations solve complex planning and operational challenges. His expertise spans Network Design, S&amp;OP/IBP, Demand Planning, Supply Planning, Production Scheduling, Supplier Management, Distribution, and Multi-Echelon Inventory Optimization. He is known for architecting scalable solutions, leading enterprise-wide programs, and translating business complexity into practical, high-impact outcomes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>Core Expertise</h2>
+            <p>Areas where domain depth, architecture leadership, and business problem solving come together.</p>
+          </div>
+        </div>
+
+        <div class="list">
+          <span class="tag">Supply Chain Transformation</span>
+          <span class="tag">Enterprise Solution Architecture</span>
+          <span class="tag">Agentic AI for Supply Chain</span>
+          <span class="tag">Network Design</span>
+          <span class="tag">S&amp;OP / IBP</span>
+          <span class="tag">Demand Planning</span>
+          <span class="tag">Supply Planning</span>
+          <span class="tag">Production Scheduling</span>
+          <span class="tag">Supplier Management</span>
+          <span class="tag">Distribution Planning</span>
+          <span class="tag">Multi-Echelon Inventory Optimization</span>
+          <span class="tag">Business Process Design</span>
+          <span class="tag">Executive Stakeholder Alignment</span>
+          <span class="tag">Cross-Functional Leadership</span>
+          <span class="tag">Digital Supply Chain Strategy</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap grid-3">
+        <article class="card">
+          <h3>What I do</h3>
+          <p>Lead enterprise supply chain transformation with a balance of strategy, process design, architecture rigor, and practical execution.</p>
+        </article>
+        <article class="card">
+          <h3>How I lead</h3>
+          <p>Bring structure to ambiguity, align business and technology teams, and move programs forward with clarity, trust, and accountability.</p>
+        </article>
+        <article class="card">
+          <h3>Where I add value</h3>
+          <p>Complex environments that need end-to-end planning excellence, operational improvement, and modern AI-enabled decision support.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>Experience</h2>
+            <p>Progressive roles across JDA Software / Blue Yonder, with a strong focus on enterprise planning transformation.</p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Blue Yonder / JDA Software</h3>
+            <div class="meta">Roles held: Senior Solution Architect • Senior Solutions Advisor • Senior Enterprise Solution Architect • Agentic AI Solution Advisor</div>
+            <ul class="clean">
+              <li>Led planning teams across 15+ large enterprise-wide customer engagements.</li>
+              <li>Served as lead architect for end-to-end supply chain planning implementations.</li>
+              <li>Designed scalable solutions across Network Design, S&amp;OP/IBP, Demand Planning, Supply Planning, Production Scheduling, Supplier Management, Distribution, and Multi-Echelon Inventory Optimization.</li>
+              <li>Partnered with senior business and technology leaders to solve high-impact planning and operational challenges.</li>
+              <li>Helped clients improve inventory turnover, forecast accuracy, cost efficiency, and sales performance.</li>
+              <li>Expanded into Agentic AI advisory, connecting emerging AI capabilities to real-world planning and decision-support use cases.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>Selected Impact</h2>
+            <p>Headline proof points that are easy for a recruiter or hiring manager to scan quickly.</p>
+          </div>
+        </div>
+
+        <div class="impact">
+          <div class="card"><strong>20+ Years</strong><span>Supply chain planning and transformation experience</span></div>
+          <div class="card"><strong>15+ Engagements</strong><span>Large enterprise customer programs led</span></div>
+          <div class="card"><strong>Fortune 500</strong><span>Complex business environments served</span></div>
+          <div class="card"><strong>AI + Planning</strong><span>Modern perspective on practical business applications</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="industries">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>Industries Served</h2>
+            <p>Cross-industry experience with complex planning, operational, and transformation needs.</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Core sectors</h3>
+            <div class="list">
+              <span class="tag">Automotive</span>
+              <span class="tag">Industrial</span>
+              <span class="tag">Semiconductor</span>
+              <span class="tag">Apparel</span>
+              <span class="tag">Food &amp; Beverage</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Additional sectors</h3>
+            <div class="list">
+              <span class="tag">CPG</span>
+              <span class="tag">Chemical</span>
+              <span class="tag">Pharmaceutical</span>
+              <span class="tag">Wholesale Distribution</span>
+              <span class="tag">Retail</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap grid-2">
+        <article class="card">
+          <h3>Education</h3>
+          <p><strong>Bachelor’s Degree, Industrial Production Engineering</strong><br />Manipal Institute of Technology</p>
+          <p style="margin-top:14px;"><strong>Post Graduate Program in AI/ML Business Applications</strong><br />The University of Texas</p>
+        </article>
+        <article class="card">
+          <h3>Thought Leadership</h3>
+          <p><strong>Public Speaker — ASCM North Texas</strong></p>
+          <p style="margin-top:14px;">Speaker on supply chain transformation, planning innovation, and the business application of AI/ML.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="card" style="text-align:center; padding: 28px;">
+          <h2 style="margin-top:0;">Let’s connect</h2>
+          <p style="max-width: 58ch; margin: 0 auto 18px; color: var(--muted);">
+            Want to discuss supply chain transformation, enterprise planning, speaking opportunities, or practical Agentic AI use cases? Reach out through LinkedIn or email.
+          </p>
+          <div class="button-row" style="justify-content:center;">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/your-linkedin-here" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+            <a class="btn" href="mailto:your-email@example.com">Send Email</a>
+          </div>
+          <p class="note">Replace <code class="inline">your-linkedin-here</code> and <code class="inline">your-email@example.com</code> with your real links before publishing.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>© <span id="year"></span> Prakash Acharya</div>
+      <div class="note">Built as a simple single-file GitHub Pages site.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
